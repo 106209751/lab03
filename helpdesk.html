@@ -56,10 +56,18 @@
             <input type="checkbox" id="mysql" name="category[]" value="mysql">
         </p>
         <p>
-            <label for="des_issue">Description of Issue</label>
+            <label for="descriptionIssue">Description of Issue</label>
             <br>
-            <textarea id="des_issue" name="des_issue" rows="4" cols="40" placeholder="Write description of your problem here..."></textarea>
+            <textarea id="descriptionIssue" name="descriptionIssue" rows="4" cols="40" placeholder="Write description of your problem here..."></textarea>
         </p>
+    </fieldset>
+    <fieldset>
+        <legend>Preferred Date / Time</legend>
+        <label for="date">Date</label>
+            <input type="text" pattern="\d{1,2}/\d{1,2}/\d{4}" name="date" id="date" placeholder="dd/mm/yyyy" maxlength="10" size="10">
+        <br>
+        <label for="time">Time</label>
+            <input type="text" pattern="([01]?[0-9]{1}|2[0-3]{1}):[0-5]{1}[0-9]{1}" name="time" id="time" placeholder="00:00" maxlength="10" size="10">
     </fieldset>
 </body>
 </html>
